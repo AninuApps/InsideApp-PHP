@@ -2,6 +2,9 @@
 
 A simple PHP SDK for InsideApp with basic functionality.
 
+[![Packagist Version](https://img.shields.io/packagist/v/aninu-apps/inside-app-php)](https://packagist.org/packages/aninu-apps/inside-app-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/aninu-apps/inside-app-php)](https://packagist.org/packages/aninu-apps/inside-app-php)
+
 ## Installation
 
 Install via Composer:
