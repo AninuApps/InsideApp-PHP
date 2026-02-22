@@ -3,12 +3,21 @@
 namespace AninuApps\InsideApp;
 
 /**
- * Simple InsideApp SDK
+ * SDK oficial InsideApp PHP - Gestiune facturi și integrare completă cu SPV
  * 
- * For support and documentation visit:
+ * Tot ce ai nevoie pentru facturarea în România:
+ * - Emitere facturi proformă, fiscale, chitanțe
+ * - Integrare completă ANAF SPV/eFactura automată
+ * - Arhivă digitală cu toate facturile din SPV
+ * - Gestionare clienți, produse, servicii, conturi bancare
+ * - API Reseller: poți gestiona tot procesul de facturare pentru mai multe 
+ *   firme direct din aplicația ta
+ * 
+ * Pentru suport și documentație:
  * - Email: support@iapp.ro
- * - Documentation: https://doc.iapp.ro
- * - Support Portal: https://developer.iapp.ro
+ * - Documentație: https://doc.iapp.ro  
+ * - Portal Suport: https://developer.iapp.ro
+ * - Referințe API: https://doc.iapp.ro/swagger
  */
 class InsideApp
 {
