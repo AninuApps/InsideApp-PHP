@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru descărcarea facturii emise
-    $response = $insideApp->spvEmiseDescarcare($data_iApp);
+    $response = $insideApp->eFacturaDescarcaEmise($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

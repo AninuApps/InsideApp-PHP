@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru listarea facturilor de la furnizori din SPV
-    $response = $insideApp->spvFurnizoriLista($data_iApp);
+    $response = $insideApp->eFacturaFurnizori($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

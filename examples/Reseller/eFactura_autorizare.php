@@ -27,7 +27,7 @@ try {
     );
     
     // Apel API pentru crearea unei noi autorizări eFactura
-    $response = $insideApp->resellerEFacturaAutorizare($data_iApp);
+    $response = $insideApp->eFacturaAutorizare($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

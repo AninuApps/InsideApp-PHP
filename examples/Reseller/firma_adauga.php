@@ -50,7 +50,7 @@ try {
     );
     
     // Apel API pentru adăugarea firmei
-    $response = $insideApp->resellerFirmaAdauga($data_iApp);
+    $response = $insideApp->firmaAdauga($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

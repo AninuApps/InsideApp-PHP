@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru vizualizarea facturii fiscale
-    $response = $insideApp->facturiVizualizare($data_iApp);
+    $response = $insideApp->viewFactura($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

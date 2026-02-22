@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru listarea autorizărilor eFactura
-    $response = $insideApp->resellerEFacturaAutorizareLista($data_iApp);
+    $response = $insideApp->eFacturaAutorizariLista($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

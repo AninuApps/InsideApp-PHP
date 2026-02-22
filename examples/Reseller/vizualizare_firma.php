@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru vizualizarea detaliilor firmei
-    $response = $insideApp->resellerFirmaVizualizare($data_iApp);
+    $response = $insideApp->firmaVizualizare($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

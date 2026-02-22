@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru marcarea facturii ca încasată
-    $response = $insideApp->facturiIncaseaza($data_iApp);
+    $response = $insideApp->incaseazaFactura($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

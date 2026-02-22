@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru listarea facturilor emise prin SPV
-    $response = $insideApp->spvEmiseLista($data_iApp);
+    $response = $insideApp->eFacturaEmise($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

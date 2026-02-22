@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru descărcarea facturilor de la furnizori
-    $response = $insideApp->spvFurnizoriDescarcare($data_iApp);
+    $response = $insideApp->eFacturaDescarcaFurnizori($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

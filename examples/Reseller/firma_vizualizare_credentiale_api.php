@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru vizualizarea credențialelor API
-    $response = $insideApp->resellerFirmaApi($data_iApp);
+    $response = $insideApp->firmaApi($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

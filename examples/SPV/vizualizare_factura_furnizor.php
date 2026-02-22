@@ -27,7 +27,7 @@ try {
     );
     
     // Apel API pentru vizualizarea facturii de la furnizor
-    $response = $insideApp->spvFurnizoriVizualizare($data_iApp);
+    $response = $insideApp->eFacturaViewFurnizori($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

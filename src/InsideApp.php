@@ -136,7 +136,7 @@ class InsideApp
      */
     public function getVersion(): string
     {
-        return "1.20.0";
+        return "1.30.0";
     }
 
     /**
@@ -895,7 +895,38 @@ class InsideApp
     {
         return $this->execute("e-factura/trimite-factura-spv", $data);
     }
+    /**
+     * Listează autorizările eFactura pentru o firmă
+     *
+     * @param array $data Datele pentru listarea autorizărilor
+     * @return array Răspunsul API-ului
+     */
+    public function eFacturaAutorizariLista(array $data): array
+    {
+        return $this->execute("e-factura/autorizare-lista", $data);
+    }
 
+    /**
+     * Vizualizează setările eFactura pentru o firmă
+     *
+     * @param array $data Datele pentru vizualizarea setărilor
+     * @return array Răspunsul API-ului
+     */
+    public function eFacturaVizualizareSetari(array $data): array
+    {
+        return $this->execute("e-factura/setari-view", $data);
+    }
+
+    /**
+     * Modifică setările eFactura pentru o firmă
+     *
+     * @param array $data Datele pentru modificarea setărilor
+     * @return array Răspunsul API-ului
+     */
+    public function eFacturaModificaSetarile(array $data): array
+    {
+        return $this->execute("e-factura/setari-update", $data);
+    }
     /**
      * Filtrează caracterele speciale dintr-un string (pentru compatibilitate XML)
      *

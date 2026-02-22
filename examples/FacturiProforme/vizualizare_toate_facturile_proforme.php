@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru vizualizarea listei de facturi proforma
-    $response = $insideApp->facturiProformaLista($data_iApp);
+    $response = $insideApp->viewProforme($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

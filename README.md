@@ -42,14 +42,20 @@ require_once 'vendor/autoload.php';
 use AninuApps\InsideAppPhp\InsideApp;
 
 // Configurare credențiale API
-$username = 'username_tau_api';
+$username = 'username_tau_api';  
 $password = 'parola_ta_api';
+$email = 'email@exemplu.ro';
 
 // Inițializare SDK
 $insideApp = new InsideApp($username, $password);
 
 // Exemplu: Listare facturi
-$facturi = $insideApp->facturiLista(['limit' => 10]);
+$data_iApp = array(
+    'email_responsabil' => $email,      // obligatoriu
+    'start' => '2026-01-01',                    // obligatoriu (Y-m-d)
+    'end' => date("Y-m-d"),                     // obligatoriu (Y-m-d) - până azi
+);
+$facturi = $insideApp->viewFacturi($data_iApp);
 
 // Exemplu: Verificare curs valutar
 $curs = $insideApp->cursValutar();

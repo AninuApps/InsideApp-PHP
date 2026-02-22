@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru vizualizarea setărilor eFactura
-    $response = $insideApp->resellerEFacturaSetariView($data_iApp);
+    $response = $insideApp->eFacturaVizualizareSetari($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

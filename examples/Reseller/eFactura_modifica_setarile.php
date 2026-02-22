@@ -46,7 +46,7 @@ try {
     );
     
     // Apel API pentru modificarea setărilor eFactura
-    $response = $insideApp->resellerEFacturaSetariUpdate($data_iApp);
+    $response = $insideApp->eFacturaModificaSetarile($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

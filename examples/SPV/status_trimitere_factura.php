@@ -28,7 +28,7 @@ try {
     );
     
     // Apel API pentru verificarea statusului trimiterii în SPV
-    $response = $insideApp->spvUploadStatus($data_iApp);
+    $response = $insideApp->eFacturaUploadStatus($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

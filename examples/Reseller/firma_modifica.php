@@ -51,7 +51,7 @@ try {
     );
     
     // Apel API pentru modificarea firmei
-    $response = $insideApp->resellerFirmaModifica($data_iApp);
+    $response = $insideApp->firmaModifica($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

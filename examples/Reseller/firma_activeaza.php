@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru activarea firmei
-    $response = $insideApp->resellerFirmaActiveaza($data_iApp);
+    $response = $insideApp->firmaActiveaza($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

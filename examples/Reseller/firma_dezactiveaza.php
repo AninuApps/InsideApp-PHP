@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru dezactivarea firmei
-    $response = $insideApp->resellerFirmaDezactiveaza($data_iApp);
+    $response = $insideApp->firmaDezactiveaza($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

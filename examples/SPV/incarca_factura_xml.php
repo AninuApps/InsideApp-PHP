@@ -34,7 +34,7 @@ try {
     );
     
     // Apel API pentru încărcarea fișierului XML în SPV
-    $response = $insideApp->spvUploadXml($data_iApp);
+    $response = $insideApp->eFacturaUploadXml($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

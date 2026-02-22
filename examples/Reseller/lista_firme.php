@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru listarea firmelor din contul reseller
-    $response = $insideApp->resellerFirmaLista($data_iApp);
+    $response = $insideApp->firmaLista($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

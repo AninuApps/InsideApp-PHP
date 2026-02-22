@@ -25,7 +25,7 @@ try {
     );
     
     // Apel API pentru resetarea credențialelor API
-    $response = $insideApp->resellerFirmaApiReset($data_iApp);
+    $response = $insideApp->firmaApiReset($data_iApp);
 
     echo ">>><pre>";
     print_r($response);

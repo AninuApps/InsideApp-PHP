@@ -27,7 +27,7 @@ try {
     );
     
     // Apel API pentru vizualizarea facturii emise
-    $response = $insideApp->spvEmiseVizualizare($data_iApp);
+    $response = $insideApp->eFacturaViewEmise($data_iApp);
 
     echo ">>><pre>";
     print_r($response);
