@@ -56,6 +56,14 @@ $response = $iApp->execute('factura/download', ['id' => 123, 'output' => 'factur
 
 - PHP 8.0 or higher
 - cURL extension enabled
+- `ext-dom` (required by PHPUnit for running the test suite)
+
+## Running Tests
+
+```bash
+composer install
+composer test
+```
 
 ## License
 
