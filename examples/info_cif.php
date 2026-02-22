@@ -7,7 +7,7 @@
 
 require_once '../vendor/autoload.php';
 
-use AninuApps\InsideAppPhp\InsideApp;
+use AninuApps\InsideApp\InsideApp;
 
 // Configurare credențiale (înlocuiește cu credențialele tale reale)
 $username = 'username_tau_api';  

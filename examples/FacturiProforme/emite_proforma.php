@@ -5,7 +5,7 @@
  * Echivalentul metodei emite_proforma() din API-ul original
  */
 
-require_once '../../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use AninuApps\InsideApp\InsideApp;
 
@@ -73,69 +73,6 @@ try {
     echo ">>><pre>";
     print_r($response);
     echo "</pre>";
-    
-    /*
-     * Exemplu de răspuns JSON:
-     * {
-     *   "status": "SUCCESS",
-     *   "error_code": "000",
-     *   "message": "Factura a fost inregistrata cu succes.",
-     *   "request": "emite/proforma",
-     *   "data": {
-     *     "client": {
-     *       "type": "J",
-     *       "name": "SC Exemplu Business SRL",
-     *       "telefon": "0721123456",
-     *       "tara": "Romania",
-     *       "judet": "Bucuresti",
-     *       "localitate": "Sectorul 1",
-     *       "adresa": "Str. Exemplu nr. 123, Bl. A1, Sc. B, Et. 2, Ap. 15",
-     *       "email": "contact@exemplu-business.ro"
-     *     },
-     *     "data_start": "2026-02-22",
-     *     "data_termen": 30,
-     *     "seria": "PF",
-     *     "moneda": "RON",
-     *     "curs_valutar": 0,
-     *     "footer": {
-     *       "intocmit_name": "Maria Ionescu",
-     *       "intocmit_cnp": "",
-     *       "delegat": "",
-     *       "buletin": "",
-     *       "aviz": "",
-     *       "auto_nr": "",
-     *       "mentiuni": ""
-     *     },
-     *     "continut": [
-     *       {
-     *         "title": "Consultanță IT - Dezvoltare aplicații web",
-     *         "descriere": "Servicii profesionale de dezvoltare",
-     *         "um": "oră",
-     *         "cantitate": 40,
-     *         "pret": 150,
-     *         "tvavalue": 1140,
-     *         "tvapercent": 19
-     *       },
-     *       {
-     *         "title": "Licență software enterprise",
-     *         "descriere": "Licență anuală pentru platforma de management",
-     *         "um": "buc",
-     *         "cantitate": 1,
-     *         "pret": 2500,
-     *         "tvavalue": 475,
-     *         "tvapercent": 19
-     *       }
-     *     ],
-     *     "document": {
-     *       "seria": "PF",
-     *       "numar": 2024001,
-     *       "total": 7615,
-     *       "status": "WAIT",
-     *       "pdf": "https://my.iapp.ro/share/proforma/tech2024pf001secure789xyz"
-     *     }
-     *   }
-     * }
-     */
     
 } catch (Exception $e) {
     echo "Eroare la emiterea facturii proforma: " . $e->getMessage() . "\n";
