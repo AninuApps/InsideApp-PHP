@@ -115,6 +115,70 @@ try {
     print_r($response);
     echo "</pre>";
     
+    /*
+     * Exemplu de răspuns JSON:
+     * {
+     *   "status": "SUCCESS",
+     *   "error_code": "000",
+     *   "message": "Factura a fost inregistrata cu succes.",
+     *   "request": "emite/factura",
+     *   "data": {
+     *     "client": {
+     *       "type": "J",
+     *       "name": "SC Tech Solutions SRL",
+     *       "telefon": "0742987654",
+     *       "tara": "Romania",
+     *       "judet": "Cluj",
+     *       "localitate": "Cluj-Napoca",
+     *       "adresa": "Str. Tehnologiei nr. 45, Et. 3, Biroul 12",
+     *       "email": "facturare@tech-solutions.ro"
+     *     },
+     *     "data_start": "2026-02-22",
+     *     "data_termen": 15,
+     *     "seria": "FF",
+     *     "numar": 2026015,
+     *     "moneda": "RON",
+     *     "curs_valutar": 0,
+     *     "footer": {
+     *       "intocmit_name": "Elena Popescu",
+     *       "intocmit_cnp": "",
+     *       "delegat": "",
+     *       "buletin": "",
+     *       "aviz": "",
+     *       "auto_nr": "",
+     *       "mentiuni": ""
+     *     },
+     *     "continut": [
+     *       {
+     *         "title": "Dezvoltare aplicație mobilă",
+     *         "descriere": "Servicii profesionale dezvoltare mobile app",
+     *         "um": "oră",
+     *         "cantitate": 80,
+     *         "pret": 120,
+     *         "tvavalue": 1824,
+     *         "tvapercent": 19
+     *       },
+     *       {
+     *         "title": "Servicii de hosting cloud",
+     *         "descriere": "Hosting dedicat cu backup și monitoring 24/7",
+     *         "um": "lună",
+     *         "cantitate": 12,
+     *         "pret": 250,
+     *         "tvavalue": 570,
+     *         "tvapercent": 19
+     *       }
+     *     ],
+     *     "document": {
+     *       "seria": "FF",
+     *       "numar": 2026015,
+     *       "total": 12994,
+     *       "status": "WAIT",
+     *       "pdf": "https://my.iapp.ro/share/factura/tech2024ff015secure456ghi"
+     *     }
+     *   }
+     * }
+     */
+    
 } catch (Exception $e) {
     echo "Eroare la emiterea facturii fiscale: " . $e->getMessage() . "\n";
 }

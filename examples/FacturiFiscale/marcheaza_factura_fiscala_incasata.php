@@ -34,6 +34,20 @@ try {
     print_r($response);
     echo "</pre>";
     
+    /*
+     * Exemplu de răspuns JSON:
+     * {
+     *   "status": "SUCCESS",
+     *   "error_code": "000",
+     *   "message": "Factura a fost incasata cu succes.",
+     *   "request": "incaseaza/factura",
+     *   "data": {
+     *     "serie": "FF",
+     *     "numar": 2026015
+     *   }
+     * }
+     */
+    
 } catch (Exception $e) {
     echo "Eroare la marcarea facturii ca încasată: " . $e->getMessage() . "\n";
 }

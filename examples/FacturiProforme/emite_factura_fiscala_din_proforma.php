@@ -34,6 +34,26 @@ try {
     print_r($response);
     echo "</pre>";
     
+    /*
+     * Exemplu de răspuns JSON:
+     * {
+     *   "status": "SUCCESS",
+     *   "error_code": "000",
+     *   "message": "Factura fiscala a fost inregistrata cu succes.",
+     *   "request": "factureaza/proforma",
+     *   "data": {
+     *     "serie": "PF",
+     *     "numar": 2026001,
+     *     "document": {
+     *       "seria": "FV",
+     *       "numar": 2026003,
+     *       "status": "WAIT",
+     *       "pdf": "https://my.iapp.ro/share/factura/tech2024fv003secure123def"
+     *     }
+     *   }
+     * }
+     */
+    
 } catch (Exception $e) {
     echo "Eroare la transformarea proformei în factură fiscală: " . $e->getMessage() . "\n";
 }
