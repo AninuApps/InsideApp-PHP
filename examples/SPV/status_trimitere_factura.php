@@ -34,6 +34,31 @@ try {
     print_r($response);
     echo "</pre>";
     
+    /*
+     * Exemplu de răspuns JSON:
+     * {
+     *   "status": "SUCCESS",
+     *   "error_code": "000",
+     *   "message": "",
+     *   "request": "e-factura/upload-status",
+     *   "data": {
+     *     "serie": "ABC",
+     *     "numar": 15746,
+     *     "raport": [
+     *       {
+     *         "time_sent": 1754256451,
+     *         "time_response": 1754256604,
+     *         "stare": "OK",
+     *         "index_incarcare": "5284730720",
+     *         "index_descarcare": "5319613124",
+     *         "message": "Factura procesată cu succes în SPV ANAF",
+     *         "type": "live"
+     *       }
+     *     ]
+     *   }
+     * }
+     */
+    
 } catch (Exception $e) {
     echo "Eroare la verificarea statusului trimiterii facturii: " . $e->getMessage() . "\n";
 }

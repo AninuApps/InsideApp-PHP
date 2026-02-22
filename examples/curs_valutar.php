@@ -24,6 +24,50 @@ try {
     print_r($response);
     echo "</pre>";
     
+    /*
+     * Exemplu de răspuns JSON:
+     * {
+     *   "status": "SUCCESS",
+     *   "error_code": "000",
+     *   "message": "",
+     *   "request": "nomenclator/cursvalutar",
+     *   "data": {
+     *     "output": [
+     *       {
+     *         "id": "1",
+     *         "tag": "RON",
+     *         "name": "Leu",
+     *         "value": "1"
+     *       },
+     *       {
+     *         "id": "2",
+     *         "tag": "EUR",
+     *         "name": "Euro",
+     *         "value": "5.1033"
+     *       },
+     *       {
+     *         "id": "3",
+     *         "tag": "USD",
+     *         "name": "Dolar SUA",
+     *         "value": "4.6789"
+     *       },
+     *       {
+     *         "id": "4",
+     *         "tag": "GBP",
+     *         "name": "Lira sterlină",
+     *         "value": "5.9234"
+     *       },
+     *       {
+     *         "id": "5",
+     *         "tag": "CHF",
+     *         "name": "Franc elvețian",
+     *         "value": "5.4567"
+     *       }
+     *     ]
+     *   }
+     * }
+     */
+    
 } catch (Exception $e) {
     echo "Eroare la obținerea cursului valutar: " . $e->getMessage() . "\n";
 }
