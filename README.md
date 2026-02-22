@@ -110,7 +110,7 @@ $response = $insideApp->emiteProforma($facturaProforma);
 
 ### 📁 Fișiere Exemple
 
-Găsești exemple complete în folderul `examples/`:
+Găsești exemple complete în folderul `examples/`. **Vezi [examples/README.md](examples/README.md) pentru documentație detaliată și instrucțiuni de rulare.**
 
 ```
 examples/
@@ -125,6 +125,7 @@ examples/
 ├── FacturiFiscale/
 │   ├── emite_factura_fiscala.php
 │   ├── marcheaza_factura_fiscala_incasata.php
+│   ├── storneaza_factura_fiscala.php
 │   ├── vizualizare_factura_fiscala.php
 │   └── vizualizare_toate_facturile_fiscale.php
 ├── SPV/
@@ -163,6 +164,7 @@ examples/
 │   ├── firma_dezactiveaza.php
 │   ├── firma_vizualizare_credentiale_api.php
 │   ├── firma_reset_credentiale_api.php
+│   ├── trimite_factura_manual_in_spv.php
 │   ├── eFactura_autorizari_lista.php
 │   ├── eFactura_autorizare_noua.php
 │   ├── eFactura_vizualizare_setari.php
