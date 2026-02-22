@@ -1,0 +1,14 @@
+{
+    "name": "aninuapps/insideapp-php",
+    "description": "PHP SDK for InsideApp API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InsideApp\\": "src/"
+        }
+    }
+}
