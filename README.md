@@ -136,6 +136,24 @@ examples/
 │   ├── descarcare_factura_furnizor.php
 │   ├── incarca_factura_xml.php
 │   └── status_trimitere_factura.php
+├── ConturiBancare/
+│   ├── lista.php              # Listare conturi bancare
+│   ├── vizualizare.php        # Vizualizare detalii cont
+│   ├── adauga.php             # Adăugare cont bancar nou
+│   ├── modifica.php           # Modificare cont existent
+│   └── sterge.php             # Ștergere cont bancar
+├── NomenclatorClienti/
+│   ├── lista.php              # Listare clienți
+│   ├── vizualizare.php        # Vizualizare detalii client
+│   ├── adauga.php             # Adăugare client nou
+│   ├── modifica.php           # Modificare client existent
+│   └── sterge.php             # Ștergere client
+├── NomenclatorProduseServicii/
+│   ├── lista.php              # Listare produse/servicii
+│   ├── vizualizare.php        # Vizualizare detalii produs
+│   ├── adauga.php             # Adăugare produs/serviciu nou
+│   ├── modifica.php           # Modificare produs existent
+│   └── sterge.php             # Ștergere produs/serviciu
 ├── Reseller/
 │   ├── lista_firme.php
 │   ├── vizualizare_firma.php
