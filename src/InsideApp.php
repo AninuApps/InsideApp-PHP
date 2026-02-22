@@ -4,6 +4,11 @@ namespace AninuApps\InsideApp;
 
 /**
  * Simple InsideApp SDK
+ * 
+ * For support and documentation visit:
+ * - Email: support@iapp.ro
+ * - Documentation: https://doc.iapp.ro
+ * - Support Portal: https://developer.iapp.ro
  */
 class InsideApp
 {

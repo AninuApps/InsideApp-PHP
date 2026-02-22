@@ -39,6 +39,16 @@ echo $sdk->getVersion(); // outputs: 1.0.0
 
 - PHP >= 7.4
 
+## Support & Documentation
+
+- **📧 Email Support**: support@iapp.ro
+- **🎫 Technical Support**: [developer.iapp.ro](https://developer.iapp.ro)
+- **📞 Contact Us**: [iapp.ro/contact](https://iapp.ro/contact)
+- **📖 Documentation**: [doc.iapp.ro](https://doc.iapp.ro)
+- **🔧 API Reference**: [doc.iapp.ro/swagger](https://doc.iapp.ro/swagger)
+- **🤝 Reseller API**: [doc.iapp.ro/reseller](https://doc.iapp.ro/reseller)
+- **🔗 Reseller Webhooks**: [doc.iapp.ro/reseller-webhook](https://doc.iapp.ro/reseller-webhook)
+
 ## License
 
 MIT License
