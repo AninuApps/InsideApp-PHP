@@ -1,0 +1,22 @@
+{
+    "name": "aninu-apps/inside-app-php",
+    "description": "A simple PHP SDK for InsideApp",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aninu Apps",
+            "email": "contact@aninu.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AninuApps\\InsideApp\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
