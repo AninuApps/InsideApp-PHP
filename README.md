@@ -116,14 +116,49 @@ Găsești exemple complete în folderul `examples/`:
 examples/
 ├── curs_valutar.php           # Cursul valutar curent
 ├── info_cif.php               # Verificare informații CIF
+├── example.php                # Exemplu basic de inițializare
 ├── FacturiProforme/
-│   ├── emite_proforma.php     # Emitere factură proforma
+│   ├── emite_factura_proforma.php
+│   ├── emite_factura_fiscala_din_proforma.php
 │   ├── vizualizare_factura_proforma.php
 │   └── vizualizare_toate_facturile_proforme.php
-└── FacturiFiscale/
-    ├── emite_factura_fiscala.php
-    ├── vizualizare_factura_fiscala.php
-    └── marcheaza_factura_fiscala_incasata.php
+├── FacturiFiscale/
+│   ├── emite_factura_fiscala.php
+│   ├── marcheaza_factura_fiscala_incasata.php
+│   ├── vizualizare_factura_fiscala.php
+│   └── vizualizare_toate_facturile_fiscale.php
+├── SPV/
+│   ├── lista_facturi_emise.php
+│   ├── lista_facturi_furnizori.php
+│   ├── vizualizare_factura_emisa.php
+│   ├── vizualizare_factura_furnizor.php
+│   ├── descarcare_factura_emisa.php
+│   ├── descarcare_factura_furnizor.php
+│   ├── incarca_factura_xml.php
+│   └── status_trimitere_factura.php
+├── Reseller/
+│   ├── lista_firme.php
+│   ├── vizualizare_firma.php
+│   ├── firma_adauga.php
+│   ├── firma_modifica.php
+│   ├── firma_activeaza.php
+│   ├── firma_dezactiveaza.php
+│   ├── firma_vizualizare_credentiale_api.php
+│   ├── firma_reset_credentiale_api.php
+│   ├── eFactura_autorizari_lista.php
+│   ├── eFactura_autorizare_noua.php
+│   ├── eFactura_vizualizare_setari.php
+│   └── eFactura_modifica_setarile.php
+├── ConfigurareSerii/
+│   ├── lista_serii.php
+│   ├── design_facturi.php
+│   ├── serie_adauga.php
+│   ├── serie_modifica.php
+│   ├── serie_vizualizare.php
+│   ├── serie_sterge.php
+│   └── serie_sterge_logo.php
+└── Incasari/
+    └── vizualizare_incasari.php
 ```
 
 ## Cerințe

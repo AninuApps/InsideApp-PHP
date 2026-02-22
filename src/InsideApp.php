@@ -29,7 +29,7 @@ class InsideApp
     /**
      * @var string URL-ul de bază al API-ului InsideApp
      */
-    private $apiUrl = 'https://api.my.iapp.ro//';
+    private $apiUrl = 'https://api.my.iapp.ro/';
     
     /**
      * @var int Timeout pentru requesturi în secunde
@@ -41,9 +41,17 @@ class InsideApp
      *
      * @param string $user Numele de utilizator (email)
      * @param string $password Parola
+     * @throws \InvalidArgumentException Dacă credentiațele sunt goale
      */
     public function __construct(string $user, string $password)
     {
+        if (empty($user)) {
+            throw new \InvalidArgumentException('Username-ul nu poate fi gol');
+        }
+        if (empty($password)) {
+            throw new \InvalidArgumentException('Parola nu poate fi golă');
+        }
+        
         $this->hash = base64_encode($user . ':' . $password);
     }
 
@@ -63,7 +71,7 @@ class InsideApp
             throw new \RuntimeException('Extensia cURL nu este disponibilă');
         }
 
-        $url = $this->apiUrl . $endpoint;
+        $url = rtrim($this->apiUrl, '/') . '/' . ltrim($endpoint, '/');
         $ch = $this->initCurl($url, $data, $hasFiles);
 
         if ($download) {
@@ -128,7 +136,7 @@ class InsideApp
      */
     public function getVersion(): string
     {
-        return "1.0.1";
+        return "1.0.0";
     }
 
     /**
@@ -136,9 +144,13 @@ class InsideApp
      *
      * @param int $timeout Timeout în secunde
      * @return self
+     * @throws \InvalidArgumentException Dacă timeout-ul este negativ
      */
     public function setTimeout(int $timeout): self
     {
+        if ($timeout < 0) {
+            throw new \InvalidArgumentException('Timeout-ul nu poate fi negativ');
+        }
         $this->timeout = $timeout;
         return $this;
     }
