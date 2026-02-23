@@ -12,7 +12,11 @@ composer install
 ```
 
 ## 📁 Structura Exemplelor
-
+### 🌍 Informații Generale
+- `curs_valutar.php` - Obține cursul valutar curent
+- `info_cif.php` - Verifică informații despre un CIF
+- `info_judete.php` - Lista județelor din România
+- `info_localitati.php` - Localități dintr-un județ specificat
 ### 🏦 ConturiBancare/
 Gestionarea conturilor bancare ale firmei:
 - `lista.php` - Listare toate conturile bancare
@@ -92,11 +96,6 @@ Configurarea seriilor de facturi și design:
 ### 💰 Incasari/
 Management încasări și plăți:
 - `vizualizare_incasari.php` - Vizualizare istoric încasări
-
-### 🔧 Utilitare
-- `curs_valutar.php` - Obținere curs valutar curent
-- `info_cif.php` - Verificare informații CIF
-- `example.php` - Exemplu basic de inițializare SDK
 
 ## 🚀 Cum să Rulezi un Exemplu
 

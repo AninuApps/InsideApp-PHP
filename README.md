@@ -122,7 +122,8 @@ Găsești exemple complete în folderul `examples/`. **Vezi [examples/README.md]
 examples/
 ├── curs_valutar.php           # Cursul valutar curent
 ├── info_cif.php               # Verificare informații CIF
-├── example.php                # Exemplu basic de inițializare
+├── info_judete.php            # Lista județelor din România
+├── info_localitati.php        # Localități dintr-un județ
 ├── FacturiProforme/
 │   ├── emite_factura_proforma.php
 │   ├── emite_factura_fiscala_din_proforma.php

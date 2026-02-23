@@ -136,7 +136,7 @@ class InsideApp
      */
     public function getVersion(): string
     {
-        return "1.30.1";
+        return "1.30.2";
     }
 
     /**

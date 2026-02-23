@@ -1,6 +1,6 @@
 {
     "name": "aninu-apps/inside-app-php",
-    "version": "1.30.1",
+    "version": "1.30.2",
     "description": "SDK oficial PHP pentru InsideApp - Gestiune facturi și integrare completă cu SPV. Emite facturi, integrează eFactura automat cu ANAF și gestionează tot procesul de facturare pentru mai multe firme direct din aplicația ta.",
     "type": "library",
     "license": "MIT",
