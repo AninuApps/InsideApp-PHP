@@ -14,6 +14,10 @@
 [![Packagist Version](https://img.shields.io/packagist/v/aninu-apps/inside-app-php)](https://packagist.org/packages/aninu-apps/inside-app-php)
 [![Total Downloads](https://img.shields.io/packagist/dt/aninu-apps/inside-app-php)](https://packagist.org/packages/aninu-apps/inside-app-php)
 
+## 📋 Changelog & Versioning
+
+Toate schimbările și versiunile sunt documentate în [CHANGELOG.md](CHANGELOG.md).
+
 ## Support & Documentation
 
 - **📧 Suport Email**: support@iapp.ro
