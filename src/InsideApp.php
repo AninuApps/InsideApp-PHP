@@ -136,7 +136,7 @@ class InsideApp
      */
     public function getVersion(): string
     {
-        return "1.30.0";
+        return "1.30.1";
     }
 
     /**
@@ -684,6 +684,28 @@ class InsideApp
     public function infoCif(array $data): array
     {
         return $this->execute("info/cif", $data);
+    }
+
+    /**
+     * Obține lista județelor din România cu informații detaliate
+     *
+     * @param array $data Parametrii opționali (email_responsabil)
+     * @return array Lista județelor cu cod, nume, auto și sort
+     */
+    public function infoJudente(array $data = []): array
+    {
+        return $this->execute("info/judete", $data);
+    }
+
+    /**
+     * Obține lista localităților dintr-un județ specificat
+     *
+     * @param array $data Parametrii cu codul județului (email_responsabil, cod)
+     * @return array Lista localităților cu cod, nume, tip, cod_parinte și postal
+     */
+    public function infoLocalitati(array $data = []): array
+    {
+        return $this->execute("info/localitati", $data);
     }
 
     // ==========================================
